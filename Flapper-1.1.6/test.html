@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FLAPPER</title>
+        <link href="css/flapper.css" type="text/css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <script src="transform/dist/jquery.transform-0.9.3.min.js"></script>
+        <script src="src/jquery.flapper.js"></script>
+        <script language="javascript">
+            $(document).ready(function() {
+                $('input.flapper.digital').flapper({
+                    width: 6,
+                    cycleInterval: 1000,
+                });
+
+                $('input.flapper.words').flapper({
+                    width: 1,
+                    cycleInterval: 1000,
+                    chars: [' ', 'YES', 'NO', 'MAYBE'],
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div style="display: inline-block; width: 48%;">
+            <div class="flapper SM">Digital</div>
+            <input class="flapper XXL digital" />
+            <input class="flapper XL digital" />
+            <input class="flapper L digital" />
+            <input class="flapper M digital" />
+            <input class="flapper S digital" />
+            <input class="flapper XS digital" />
+        </div>
+        <div style="display: inline-block; width: 48%;">
+            <div class="flapper SM">Words</div>
+            <input class="flapper XXL words" />
+            <input class="flapper XL words" />
+            <input class="flapper L words" />
+            <input class="flapper M words" />
+            <input class="flapper S words" />
+            <input class="flapper XS words" />
+        </div>
+    </body>
+</html>
+
