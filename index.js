@@ -5,10 +5,12 @@ $(document).ready(function() {
 	$('#countdown_colon').flapper({width: 1, chars: [':']});
 	$('#countdown_secs').flapper({width: 2, chars: chars});
 	show_countdown(seconds);
-	setInterval(function() {
-		seconds = seconds - 1;
-		show_countdown(seconds);
-	}, 1000);
+	if (seconds > 0){
+		setInterval(function() {
+			seconds = seconds - 1;
+			show_countdown(seconds);
+		}, 1000);
+	}
 });
 
 function show_countdown(seconds) {
