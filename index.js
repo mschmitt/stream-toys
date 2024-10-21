@@ -1,7 +1,7 @@
 var seconds = 300;
 var urlParams = new URLSearchParams(window.location.search);
-if (urlParams.has('seconds')){
-	seconds = urlParams.get('seconds');
+if (urlParams.has('s')){
+	seconds = urlParams.get('s');
 }
 const chars = ['9','8','7','6','5','4','3','2','1','0'];
 $(document).ready(function() {
