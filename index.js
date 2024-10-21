@@ -1,4 +1,8 @@
 var seconds = 300;
+var urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has('seconds')){
+	seconds = urlParams.get('seconds');
+}
 const chars = ['9','8','7','6','5','4','3','2','1','0'];
 $(document).ready(function() {
 	$('#countdown_mins').flapper({width: 2, chars: chars});
@@ -26,4 +30,3 @@ function show_countdown(seconds) {
 	$('#countdown_colon').val(':').change();
 	$('#countdown_secs').val(split_secs).change();
 }
-
