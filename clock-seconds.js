@@ -7,7 +7,7 @@ $(document).ready(function() {
 	$('#clock_secs').flapper({width: 2, chars: chars});
 	setInterval(function() {
 		show_clock();
-	}, 500);
+	}, 100);
 });
 
 function show_clock() {
