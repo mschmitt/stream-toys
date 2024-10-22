@@ -8,7 +8,7 @@ $(document).ready(function() {
 	show_clock();
 	setInterval(function() {
 		show_clock();
-	}, 1000);
+	}, 1000); // Note we're on stream, viewers clock will always be offset.
 });
 
 function show_clock() {
