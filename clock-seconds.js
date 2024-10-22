@@ -5,9 +5,10 @@ $(document).ready(function() {
 	$('#clock_mins').flapper({width: 2, chars: chars});
 	$('#clock_colon_2').flapper({width: 1, chars: [':']});
 	$('#clock_secs').flapper({width: 2, chars: chars});
+	show_clock();
 	setInterval(function() {
 		show_clock();
-	}, 100);
+	}, 1000);
 });
 
 function show_clock() {
