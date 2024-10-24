@@ -2,11 +2,17 @@ const chars = ['0','1','2','3','4','5','6','7','8','9',' '];
 var hours_ready = 1;
 var minutes_ready = 1;
 $(document).ready(function() {
+	$(document).ready(function() {
+		setTimeout(init_flapper, 2000);
+	});	
+});
+
+function init_flapper(){
 	$('#clock_hrs').flapper({width: 2, chars: chars, on_anim_end: function(){hours_ready = 1; flapper_ready();}});
 	$('#clock_colon').flapper({width: 1, chars: [':']});
 	$('#clock_mins').flapper({width: 2, chars: chars, on_anim_end: function(){minutes_ready = 1; flapper_ready();}});
 	flapper_ready();
-});
+}
 
 function show_clock() {
 	var date = new Date();

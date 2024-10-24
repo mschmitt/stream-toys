@@ -3,13 +3,17 @@ var hours_ready = 1;
 var minutes_ready = 1;
 var seconds_ready = 1;
 $(document).ready(function() {
+	setTimeout(init_flapper, 2000);
+});
+
+function init_flapper() {
 	$('#clock_hrs').flapper({width: 2, chars: chars, on_anim_end: function(){hours_ready = 1; flapper_ready();}});
 	$('#clock_colon_1').flapper({width: 1, chars: [':']});
 	$('#clock_mins').flapper({width: 2, chars: chars, on_anim_end: function(){minutes_ready = 1; flapper_ready();}});
 	$('#clock_colon_2').flapper({width: 1, chars: [':']});
 	$('#clock_secs').flapper({width: 2, chars: chars, on_anim_end: function(){seconds_ready = 1; flapper_ready();}});
 	flapper_ready();
-});
+}
 
 function show_clock() {
 	var date = new Date();
