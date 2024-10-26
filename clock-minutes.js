@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 function init_flapper(){
 	$('#clock_hrs').flapper({width: 2, chars: chars, on_anim_end: function(){hours_ready = 1; flapper_ready();}});
-	$('#clock_colon').flapper({width: 1, chars: [':']});
+	$('#clock_colon').flapper({width: 1, chars: [':', ' ']});
 	$('#clock_mins').flapper({width: 2, chars: chars, on_anim_end: function(){minutes_ready = 1; flapper_ready();}});
 }
 
@@ -15,8 +15,14 @@ function show_clock() {
 	var date = new Date();
 	var hours = date.getHours();
 	var minutes = date.getMinutes();
+	var seconds = date.getSeconds();
 	hours_ready = 0;
 	minutes_ready = 0;
+	if (seconds % 2 == 0) { // "blinking" colon
+		$('#clock_colon').val(':').change();
+	} else {
+		$('#clock_colon').val(' ').change();
+	}
 	if (hours < 10){
 		hours = '0' + hours;
 	}else{
@@ -34,7 +40,6 @@ function show_clock() {
 		return;
 	} else {
 		$('#clock_hrs').val(hours).change();
-		$('#clock_colon').val(':').change();
 		$('#clock_mins').val(minutes).change();
 	}
 }

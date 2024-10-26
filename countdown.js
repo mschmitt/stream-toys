@@ -3,10 +3,15 @@ var urlParams = new URLSearchParams(window.location.search);
 if (urlParams.has('s')){
 	seconds = urlParams.get('s');
 }
+var want_redirect = 0;
+if (urlParams.has('r') && (urlParams.get('r') == 1)){
+	want_redirect = 1;
+}
+
 const chars = ['9','8','7','6','5','4','3','2','1','0'];
 $(document).ready(function() {
 	$('#countdown_mins').flapper({width: 2, chars: chars});
-	$('#countdown_colon').flapper({width: 1, chars: [':']});
+	$('#countdown_colon').flapper({width: 1, chars: [':', ' ']});
 	$('#countdown_secs').flapper({width: 2, chars: chars});
 	show_countdown(seconds);
 	const flap_interval = setInterval(function() {
@@ -16,8 +21,15 @@ $(document).ready(function() {
 });
 
 function show_countdown(seconds) {
+	if (seconds % 2 == 0) { // "blinking" colon
+		$('#countdown_colon').val(':').change();
+	} else {
+		$('#countdown_colon').val(' ').change();
+	}
 	if (seconds < 0) {
-		clearInterval(flap_interval);
+		if (want_redirect == 1) {
+			window.location.replace("clock-seconds.html");
+		}
 		return;
 	}
 	var split_mins = Math.floor(seconds/60);
@@ -29,6 +41,5 @@ function show_countdown(seconds) {
 		split_secs = '0' + split_secs;
 	}
 	$('#countdown_mins').val(split_mins).change();
-	$('#countdown_colon').val(':').change();
 	$('#countdown_secs').val(split_secs).change();
 }
