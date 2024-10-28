@@ -4,7 +4,7 @@ Personal widgets for obs, no business model attached.
 
 ## countdown
 
-* Provide query option "s=x" for the countdown duration. Default is 5 minutes.
+* Provide query option "s=x" for the countdown duration in seconds. Default is 300 seconds / 5 minutes.
 * Provide query option "r=1" for redirecting to clock when countdown reaches zero.
 
 ### Examples
