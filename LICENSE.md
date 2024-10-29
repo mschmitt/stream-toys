@@ -1,6 +1,6 @@
 # License information
 
-## Bundled components:
+## Bundled components
 
 * Flapper Library
   * Copyright (c) 2012 Justin Kerr Sheckler
@@ -12,7 +12,7 @@
   * Copyright 2010, Grady Kuhnline
   * http://jquery.org/license
 
-# Widgets:
+## Widgets
 
 ```
 MIT License
