@@ -1,6 +1,6 @@
 # stream-toys
 
-Personal widgets for obs, no business model attached.
+Personal split-flap display widgets for obs, no business model attached.
 
 ## countdown
 
