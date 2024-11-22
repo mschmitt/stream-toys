@@ -7,6 +7,10 @@ var want_redirect = 0;
 if (urlParams.has('r')){
 	want_redirect = urlParams.get('r');
 }
+var want_disappear = 0;
+if (urlParams.has('d')){
+	want_disappear = urlParams.get('d');
+}
 
 const chars = ['9','8','7','6','5','4','3','2','1','0'];
 $(document).ready(function() {
@@ -27,7 +31,9 @@ function show_countdown(seconds) {
 		$('#countdown_colon').val(' ').change();
 	}
 	if (seconds < 0) {
-		if (want_redirect == 1) {
+		if (want_disappear == 1) {
+			window.location.replace("about:blank");
+		} else if (want_redirect == 1) {
 			window.location.replace("clock-seconds.html");
 		} else if (want_redirect == 2) {
 			window.location.replace("clock-minutes.html");
