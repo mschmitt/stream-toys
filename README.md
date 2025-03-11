@@ -33,9 +33,9 @@ Personal split-flap display widgets for OBS, no business model attached.
 
 ### Custom CSS
 
-I personally run the world clock using a custom set of locations, own location first, with the following custom CSS in OBS browser:
+I personally run the world clock using a custom set of locations, own location first, with the following custom CSS in OBS browser to set the first line apart and to hide the blank flapper:
 
 ```
-.clock:nth-of-type(1) { padding-bottom: 1em; }
+.clock:nth-of-type(1) { padding-bottom: 2em; }
 .blank { visibility: hidden; }
 ```
