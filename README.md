@@ -24,3 +24,9 @@ Personal split-flap display widgets for obs, no business model attached.
 
 * [HH:MM:SS](https://mschmitt.github.io/stream-toys/clock-seconds.html)
 * [HH:MM](https://mschmitt.github.io/stream-toys/clock-minutes.html)
+
+## worldclock
+
+### Examples
+* [Default set of locations](https://mschmitt.github.io/stream-toys/clock-world.html)
+* [Custom set of locations, passed as query string](https://mschmitt.github.io/stream-toys/clock-world.html?FRA=Europe/Berlin&NYC=America/New_York&MEL=Australia/Melbourne)
