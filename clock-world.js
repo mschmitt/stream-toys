@@ -22,8 +22,6 @@ $(document).ready(function() {
 		urlParams.set('MEL', 'Australia/Melbourne');
 	}
 	for (const [desc, tz] of urlParams.entries()) {
-		console.log(desc);
-		console.log(tz);
 		let uuid = self.crypto.randomUUID();
 		// Map description fields to abstract ids
 		description[uuid] = desc;
@@ -34,11 +32,11 @@ $(document).ready(function() {
 		$('.clock:first').clone().appendTo('body');
 		// Rename the copy (last in list) to identify it
 		$('.clock:last').attr('id', uuid);
+		// Initialize each flapper by uuid
 		init_flapper(uuid);
 	}
 	// Clock divs fully assembled. Delete the top clock template div.
 	$('.clock:first').remove();
-	// Initialize each flapper
 	console.log(description);
 	console.log(timezone);
 });
@@ -55,7 +53,6 @@ function show_clock(uuid) {
 	var date = new Date(new Date().toLocaleString('en', {timeZone: timezone[uuid]}))
 	var hours = date.getHours();
 	var minutes = date.getMinutes();
-	var seconds = date.getSeconds();
 	hours_ready[uuid] = 0;
 	minutes_ready[uuid] = 0;
 	$('#' + uuid + ' .description').val(description[uuid]).change();

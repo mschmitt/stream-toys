@@ -1,6 +1,6 @@
 # stream-toys
 
-Personal split-flap display widgets for obs, no business model attached.
+Personal split-flap display widgets for OBS, no business model attached.
 
 ## countdown
 
@@ -30,3 +30,12 @@ Personal split-flap display widgets for obs, no business model attached.
 ### Examples
 * [Default set of locations](https://mschmitt.github.io/stream-toys/clock-world.html)
 * [Custom set of locations, passed as query string](https://mschmitt.github.io/stream-toys/clock-world.html?FRA=Europe/Berlin&NYC=America/New_York&MEL=Australia/Melbourne)
+
+### Custom CSS
+
+I personally run the world clock using a custom set of locations, own location first, with the following custom CSS in OBS browser:
+
+```
+.clock:nth-of-type(1) { padding-bottom: 1em; }
+.blank { visibility: hidden; }
+```
