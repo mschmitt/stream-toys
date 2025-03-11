@@ -15,7 +15,7 @@ $(document).ready(function() {
 		urlParams.set('LON', 'Europe/London');
 		urlParams.set('BER', 'Europe/Berlin');
 		urlParams.set('JNB', 'Africa/Johannesburg');
-		urlParams.set('MOW', 'Europe/Moscow');
+		urlParams.set('IST', 'Europe/Istanbul');
 		urlParams.set('DXB', 'Asia/Dubai');
 		urlParams.set('SIN', 'Asia/Singapore');
 		urlParams.set('TYO', 'Asia/Tokyo');
