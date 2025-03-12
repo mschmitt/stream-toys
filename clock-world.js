@@ -55,8 +55,6 @@ function show_clock(uuid) {
 	var minutes = date.getMinutes();
 	hours_ready[uuid] = 0;
 	minutes_ready[uuid] = 0;
-	$('#' + uuid + ' .description').val(description[uuid]).change();
-	$('#' + uuid + ' .clock_colon').val(':').change();
 	if (hours < 10){
 		hours = '0' + hours;
 	}else{
@@ -68,14 +66,18 @@ function show_clock(uuid) {
 		minutes = minutes.toString();
 	}
 	// Pretend to glitch randomly every once in a while
-	if (Math.floor(Math.random() * 1000) == 0) {
-		$('#' + uuid + ' .description').val('AAA').change();
+	if (Math.floor(Math.random() * 5000) == 0) {
+		$('#' + uuid + ' .description').val('000').change();
+		$('#' + uuid + ' .blank').val('0').change();
 		$('#' + uuid + ' .clock_hrs').val('00').change();
+		$('#' + uuid + ' .clock_colon').val('0').change();
 		$('#' + uuid + ' .clock_mins').val('00').change();
 		return;
 	} else {
 		$('#' + uuid + ' .description').val(description[uuid]).change();
+		$('#' + uuid + ' .blank').val(' ').change();
 		$('#' + uuid + ' .clock_hrs').val(hours).change();
+		$('#' + uuid + ' .clock_colon').val(':').change();
 		$('#' + uuid + ' .clock_mins').val(minutes).change();
 	}
 }
