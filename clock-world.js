@@ -68,11 +68,13 @@ function show_clock(uuid) {
 		minutes = minutes.toString();
 	}
 	// Pretend to glitch randomly every once in a while
-	if (Math.floor(Math.random() * 500) == 0) {
+	if (Math.floor(Math.random() * 1000) == 0) {
+		$('#' + uuid + ' .description').val('AAA').change();
 		$('#' + uuid + ' .clock_hrs').val('00').change();
 		$('#' + uuid + ' .clock_mins').val('00').change();
 		return;
 	} else {
+		$('#' + uuid + ' .description').val(description[uuid]).change();
 		$('#' + uuid + ' .clock_hrs').val(hours).change();
 		$('#' + uuid + ' .clock_mins').val(minutes).change();
 	}
