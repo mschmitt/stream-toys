@@ -66,12 +66,14 @@ function show_clock(uuid) {
 		minutes = minutes.toString();
 	}
 	// Pretend to glitch randomly every once in a while
-	if (Math.floor(Math.random() * 5000) == 0) {
-		$('#' + uuid + ' .description').val('000').change();
-		$('#' + uuid + ' .blank').val('0').change();
-		$('#' + uuid + ' .clock_hrs').val('00').change();
-		$('#' + uuid + ' .clock_colon').val('0').change();
-		$('#' + uuid + ' .clock_mins').val('00').change();
+	// I swear there is more work in here than in every
+	// other part of this script.
+	if (Math.floor(Math.random() * 2000) == 0) {
+		$('#' + uuid + ' .description').val(random_characters(3)).change();
+		$('#' + uuid + ' .blank').val(random_characters(1)).change();
+		$('#' + uuid + ' .clock_hrs').val(random_characters(2)).change();
+		$('#' + uuid + ' .clock_colon').val(random_characters(1)).change();
+		$('#' + uuid + ' .clock_mins').val(random_characters(2)).change();
 		return;
 	} else {
 		$('#' + uuid + ' .description').val(description[uuid]).change();
@@ -88,3 +90,13 @@ function flapper_ready(uuid){
 	}
 }
 
+function random_characters(want_chars){
+	var result = '';
+	var got_chars = 0;
+	const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 :';
+	while (got_chars < want_chars) {
+		result += chars.charAt(Math.floor(Math.random() * chars.length));
+		got_chars += 1;
+	}
+	return result;
+}
