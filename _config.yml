@@ -1,6 +1,4 @@
 title: Stream Toys
-description: >-
-  Stream toys for OBS, flapper clock, countdown and world clock
 theme: minima
 exclude:
   - .sass-cache/
