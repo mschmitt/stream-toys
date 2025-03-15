@@ -1,3 +1,6 @@
+---
+permalink: index.html
+---
 # stream-toys
 
 Personal split-flap display widgets for OBS, no business model attached.
