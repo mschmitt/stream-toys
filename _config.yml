@@ -1,7 +1,7 @@
 title: Stream Toys
 description: >-
   Stream toys for OBS, flapper clock, countdown and world clock
-remote_theme: aterenin/minima-reboot
+theme: minima
 exclude:
   - .sass-cache/
   - .jekyll-cache/
