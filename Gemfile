@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 gem "jekyll"
-gem "no-style-please"
+gem "minima"
 gem "webrick"
