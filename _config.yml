@@ -1,4 +1,4 @@
-theme: rain
+theme: minima-reboot
 exclude:
   - .sass-cache/
   - .jekyll-cache/

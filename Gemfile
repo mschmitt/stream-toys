@@ -1,5 +1,4 @@
 source "https://rubygems.org"
 gem "jekyll"
-gem "activesupport"
-gem "rain"
+gem "minima-reboot"
 gem "webrick"
