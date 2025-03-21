@@ -1,4 +1,4 @@
-theme: minima
+theme: rain
 exclude:
   - .sass-cache/
   - .jekyll-cache/
