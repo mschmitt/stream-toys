@@ -1,4 +1,5 @@
 ---
+title: Stream Toys
 permalink: index.html
 layout: default
 ---
