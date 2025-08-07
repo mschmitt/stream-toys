@@ -1,5 +1,5 @@
-var show_for_ms=500; // for testing
-var hide_for_ms=2000; // for testing
+var show_for_ms=3;
+var hide_for_ms=10000; 
 
 $(document).ready(function() {
 	size_to_container();
@@ -15,8 +15,8 @@ function size_to_container() {
 }
 
 function show_message() {
-	$("#message").show(0);
-	// $("#message").show(0, function() {setTimeout(hide_message, show_for_ms)});
+	// $("#message").show(0);
+	$("#message").show(0, function() {setTimeout(hide_message, show_for_ms)});
 }
 function hide_message() {
 	$("#message").hide(0, function() {setTimeout(show_message, hide_for_ms)});
