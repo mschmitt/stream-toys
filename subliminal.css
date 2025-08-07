@@ -1,0 +1,16 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#message {
+	width: 100vw;
+	height: 100vh;
+	color: red;
+	font-family: Impact;
+	display: none;
+}
