@@ -4,9 +4,9 @@ layout: default
 ---
 # stream-toys
 
-Personal split-flap display widgets for OBS, no business model attached.
+Personal widgets for OBS, no business model attached.
 
-## countdown
+## Split-flap countdown
 
 * Provide query option "s=x" for the countdown duration in seconds. Default is 300 seconds / 5 minutes.
 * Provide query option "r=1" (HH:MM:SS) or "r=2" (HH:MM) for redirecting to clock when countdown reaches zero.
@@ -22,14 +22,14 @@ Personal split-flap display widgets for OBS, no business model attached.
 * [Default 5 mins and redirect to HH:MM:SS](countdown.html?r=1)
 * [6 mins and redirect to HH:MM](countdown.html?s=360&r=2)
 
-## clock
+## Split-flap clock
 
 ### Examples
 
 * [HH:MM:SS](clock-seconds.html)
 * [HH:MM](clock-minutes.html)
 
-## worldclock
+## Split-flap worldclock
 
 ### Examples
 * [Default set of locations](clock-world.html)
@@ -44,6 +44,10 @@ I personally run the world clock using a custom set of locations, own location f
 .blank { visibility: hidden; }
 ```
 
+## Subliminal message
+
+Currently under development, not configurable and not available to the public.
+
 # License information
 
 ## Bundled components
@@ -57,6 +61,12 @@ I personally run the world clock using a custom set of locations, own location f
 * jQuery Transform
   * Copyright 2010, Grady Kuhnline
   * http://jquery.org/license
+* textFit
+  * Incomplete MIT license
+  * https://github.com/STRML/textFit/blob/master/README.md
+* Croner
+  * Copyright (c) 2015-2021 Hexagon <github.com/Hexagon>
+  * https://github.com/Hexagon/croner/blob/master/LICENSE
 
 ## Widgets
 
