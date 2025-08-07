@@ -1,5 +1,5 @@
-var show_for_ms=3;
-var hide_for_ms=10000; 
+var show_for_ms = 16; // One frame @ 60Hz
+var hide_for_ms = ( 20 * 60 * 1000 - 16); // 20 minutes minus one frame
 
 $(document).ready(function() {
 	size_to_container();
