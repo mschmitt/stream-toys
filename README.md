@@ -48,6 +48,8 @@ I personally run the world clock using a custom set of locations, own location f
 
 Currently under development, not configurable and not available to the public.
 
+This toy relies on [Microsoft's **IMPACT** "meme" font](https://www.fosshub.com/MS-TrueType-Core-Fonts.html), which may not be preinstalled when running elsewhere.
+
 # License information
 
 ## Bundled components
