@@ -80,6 +80,9 @@ This toy relies on [Microsoft's **IMPACT** "meme" font](https://www.fosshub.com/
 * Croner
   * Copyright (c) 2015-2021 Hexagon <github.com/Hexagon>
   * https://github.com/Hexagon/croner/blob/master/LICENSE
+* DOMPurify
+  * Copyright 2025 Dr.-Ing. Mario Heiderich, Cure53
+  * https://github.com/levmyshkin/dom_purify/blob/main/LICENSE
 
 ## Widgets
 

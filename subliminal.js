@@ -28,7 +28,8 @@ $(window).resize(function() {
 });
 
 function show_message() {
-	$("#message").html(message[0]);
+	var target = document.getElementById("message");
+	$("#message").html(DOMPurify.sanitize(message[0], {USE_PROFILES: {html: true}}));
 	$("#message").show(0, function() {setTimeout(hide_message, show_for_ms)});
 	textFit($('#message')[0], {alignHoriz: true, alignVert: true, maxFontSize: 1000});
 }
