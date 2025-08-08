@@ -1,5 +1,9 @@
 const show_for_ms = 16; // 16 ms = One frame @ 60Hz
+
+// Defaults
 var schedule = '0 0,20,40 * * * *';
+var message = 'FOLLOW<br>NOW'
+
 var urlParams = new URLSearchParams(window.location.search);
 if (urlParams.has('s')){
 	schedule = urlParams.get('s');
@@ -8,7 +12,7 @@ console.log('Schedule: ' + schedule);
 if (urlParams.has('m')){
 	message = urlParams.get('m');
 }
-console.log('Schedule: ' + message);
+console.log('Message: ' + message);
 
 $(document).ready(function() {
 	const job = new Cron(schedule, show_message);
