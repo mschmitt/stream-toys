@@ -46,7 +46,15 @@ I personally run the world clock using a custom set of locations, own location f
 
 ## Subliminal message
 
-Currently under development, not configurable and not available to the public.
+The subliminal message toy flashes a configurable message, at configurable intervals, for the duration of a single 60 Hz frame. The message is automatically scaled up to fill the browser window.
+
+Schedules can be passed using [Croner's extended crontab-style patterns](https://croner.56k.guru/usage/pattern/). Default is 0 0,20,40 * * * * meaning the message will flash 0, 20 and 40 minutes after every hour.
+
+### Examples
+
+* [Default, "FOLLOW", 0, 20 and 40 minutes after every hour](subliminal.html)
+* ["FOLLOW" every second (useful for testing)](subliminal.html?s=* * * * * *)
+* [Multiline](subliminal.html?s=* * * * * *&m=FOLLOW<br>SUBSCRIBE<br>OBEY)
 
 This toy relies on [Microsoft's **IMPACT** "meme" font](https://www.fosshub.com/MS-TrueType-Core-Fonts.html), which may not be preinstalled when not running on Windows.
 

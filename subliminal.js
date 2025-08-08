@@ -2,7 +2,7 @@ const show_for_ms = 16; // 16 ms = One frame @ 60Hz
 
 // Defaults
 var schedule = '0 0,20,40 * * * *';
-var message = 'FOLLOW<br>NOW'
+var message = 'FOLLOW'
 
 var urlParams = new URLSearchParams(window.location.search);
 if (urlParams.has('s')){
