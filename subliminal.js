@@ -5,6 +5,10 @@ if (urlParams.has('s')){
 	schedule = urlParams.get('s');
 }
 console.log('Schedule: ' + schedule);
+if (urlParams.has('m')){
+	message = urlParams.get('m');
+}
+console.log('Schedule: ' + message);
 
 $(document).ready(function() {
 	const job = new Cron(schedule, show_message);
