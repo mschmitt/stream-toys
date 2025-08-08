@@ -82,7 +82,7 @@ This toy relies on [Microsoft's **IMPACT** "meme" font](https://www.fosshub.com/
   * https://github.com/Hexagon/croner/blob/master/LICENSE
 * DOMPurify
   * Copyright 2025 Dr.-Ing. Mario Heiderich, Cure53
-  * https://github.com/levmyshkin/dom_purify/blob/main/LICENSE
+  * https://github.com/cure53/DOMPurify/blob/main/LICENSE
 
 ## Widgets
 
