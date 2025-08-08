@@ -1,5 +1,10 @@
 const show_for_ms = 16; // 16 ms = One frame @ 60Hz
 var schedule = '0 0,20,40 * * * *';
+var urlParams = new URLSearchParams(window.location.search);
+if (urlParams.has('s')){
+	schedule = urlParams.get('s');
+}
+console.log('Schedule: ' + schedule);
 
 $(document).ready(function() {
 	const job = new Cron(schedule, show_message);
