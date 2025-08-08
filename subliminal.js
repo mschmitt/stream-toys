@@ -15,6 +15,7 @@ if (urlParams.has('m')){
 console.log('Message: ' + message);
 
 $(document).ready(function() {
+	$("#message").html(message);
 	const job = new Cron(schedule, show_message);
 	console.log("Next executions:");
 	console.log(job.nextRuns(10));
