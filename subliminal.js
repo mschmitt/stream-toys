@@ -1,7 +1,8 @@
-var show_for_ms = 16; // 16 ms = One frame @ 60Hz
+const show_for_ms = 16; // 16 ms = One frame @ 60Hz
+var schedule = '* * * * * *';
 
 $(document).ready(function() {
-	const job = new Cron('0 0,20,40 * * * *', show_message);
+	const job = new Cron(schedule, show_message);
 	console.log("Next executions:");
 	console.log(job.nextRuns(10));
 });
