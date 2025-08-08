@@ -54,7 +54,8 @@ Schedules can be passed using [Croner's extended crontab-style patterns](https:/
 
 * [Default, "FOLLOW", 0, 20 and 40 minutes after every hour](subliminal.html)
 * ["FOLLOW" every second (useful for testing)](subliminal.html?s=* * * * * *)
-* [Multiline](subliminal.html?s=* * * * * *&m=FOLLOW<br>SUBSCRIBE<br>OBEY)
+* [Multiline every 15 minutes, from 21:00 to 06:00](subliminal.html?s=0 0,15,30,45 21-23,0-6 * * *&m=STAY<br>AWAKE)
+* [I loosely avoid fractions, but yes, they do work](subliminal.html?s=*/2 */1 0-23/1 * * *)
 
 This toy relies on [Microsoft's **IMPACT** "meme" font](https://www.fosshub.com/MS-TrueType-Core-Fonts.html), which may not be preinstalled when not running on Windows.
 
