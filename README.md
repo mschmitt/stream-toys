@@ -55,7 +55,7 @@ This toy relies on [Microsoft's **IMPACT** "meme" font](https://www.fosshub.com/
 ### Examples
 
 * [Default, "FOLLOW", 0, 20 and 40 minutes after every hour](subliminal.html)
-* ["FOLLOW" every second (useful for testing)](subliminal.html?s=*\ *\ *\ *\ *\ *)
+* ["FOLLOW" every second (useful for testing)](subliminal.html?s=* * * * * *)
 * [Multiline every 15 minutes, from 21:00 to 06:00](subliminal.html?s=0 0,15,30,45 21-23,0-5 * * *&m=STAY<br>AWAKE)
 * [Multiple messages](subliminal.html?s=* * * * * *&m=ONE&m=TWO&m=THREE)
 * [Multiple messages, ready to use](subliminal.html?m=FOLLOW&m=SUBSCRIBE&m=DONATE)
