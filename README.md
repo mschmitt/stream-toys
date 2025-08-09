@@ -59,8 +59,8 @@ Spaces in the query parameters should be escaped as "+", although they will usua
 * [Default, "FOLLOW", 0, 20 and 40 minutes after every hour](subliminal.html)
 * ["FOLLOW" every second (useful for testing)](subliminal.html?s=*+*+*+*+*+*)
 * [Multiline every 15 minutes, from 21:00 to 06:00](subliminal.html?s=0+0,15,30,45+21-23,0-5+*+*+*&m=STAY<br>AWAKE)
-* [Multiple messages](subliminal.html?s=*+*+*+*+*+*&m=ONE&m=TWO&m=THREE)
-* [Multiple messages, ready to use](subliminal.html?m=FOLLOW&m=SUBSCRIBE&m=DONATE+NOW)
+* [Multiple messages](subliminal.html?s=*+*+*+*+*+*&m=ONE&m=TWO&m=THREE&m=SUBSCRIBE+NOW)
+* [Multiple messages, ready to use](subliminal.html?m=FOLLOW&m=SUBSCRIBE&m=DONATE)
 * [I loosely avoid fractions, but yes, they do work](subliminal.html?s=*/2+*/1+0-23/1+*+*+*)
 
 # License information
