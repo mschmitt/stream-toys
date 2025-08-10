@@ -1,4 +1,4 @@
-const show_for_ms = 16; // 16 ms = One frame @ 60Hz
+const show_for_ms = 24; // 16 ms = One frame @ 60Hz
 
 // Defaults
 var schedule = '0 0,20,40 * * * *';
