@@ -28,12 +28,14 @@ $(window).resize(function() {
 });
 
 function show_message() {
+	console.log('show');
 	var target = document.getElementById("message");
 	$("#message").html(DOMPurify.sanitize(message[0], {USE_PROFILES: {html: true}}));
 	$("#message").show(0, function() {setTimeout(hide_message, show_for_ms)});
 	textFit($('#message')[0], {alignHoriz: true, alignVert: true, maxFontSize: 1000});
 }
 function hide_message() {
+	console.log('hide');
 	$("#message").hide(0);
 	message.push(message.shift()); // prepare message for next invocation
 }
